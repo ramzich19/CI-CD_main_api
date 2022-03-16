@@ -1,7 +1,6 @@
 on:
  release:
    types: [published]
-
 build_and_pub:
   needs: [run_tests]
 
