@@ -13,7 +13,7 @@ jobs:
     steps:
       # Чекаутим код
       - uses: actions/checkout@master
-      # Устанавливаем python нужной версии
+      # Устанавливаем python нужной верси
       - uses: actions/setup-python@v1
         with:
           python-version: '3.8'
