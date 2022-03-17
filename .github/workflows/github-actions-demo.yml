@@ -27,7 +27,7 @@ jobs:
         run: coverage report
         
       - name: Build Docker
-        uses: mr-smithers-excellent/docker-build-push@v4
+        uses: actions/checkout@master
         with:
           image: ramzich19/ci-cd_main_api
           registry: docker.io
