@@ -25,3 +25,13 @@ jobs:
         run: coverage run manage.py test
       - name: Tests report
         run: coverage report
+        
+      - name: Build Docker
+        uses: mr-smithers-excellent/docker-build-push@v4
+        with:
+          image: ramzich19/ci-cd_main_api
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          
+      
